@@ -18,13 +18,8 @@ require('./models/winkel');
 
 
 
-mongoose.connect('mongodb://localhost/springkasteel', function() {
+mongoose.connect('mongodb://secureadmin:5db30d62e48995e700e28aef2019fe94@ds117189.mlab.com:17189/heroku_0wgc5r55', function() {
   console.log('Mongoose connected. DB connection open');
-  console.log(ip.address());
-
-  var email = "simon@test.be"
-  var hash = crypto.createHash('md5').update(email).digest('hex');
-  console.log(hash)
 });
 
 
